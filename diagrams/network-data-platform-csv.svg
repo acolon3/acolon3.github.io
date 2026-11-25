@@ -1,0 +1,305 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2100" height="1010" viewBox="0 0 2100 1010" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<defs>
+<marker id="ah-csv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0E9F8E"/></marker>
+<marker id="ah-json" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#E08A00"/></marker>
+<marker id="ah-xml" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7C4DDB"/></marker>
+<marker id="ah-read" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94A3B8"/></marker>
+<marker id="ah-ext" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7C8BA1"/></marker>
+</defs>
+<rect width="2100" height="1010" fill="#FFFFFF"/>
+<text x="30.0" y="50.0" font-size="28" font-weight="700" fill="#0F172A" text-anchor="start">Network Data Platform · CSV Path</text>
+<text x="30.0" y="80.0" font-size="15" font-weight="400" fill="#64748B" text-anchor="start">Logstash publishes CSV to Kafka. Logstash consumers parse and load Elasticsearch; a GoLang path builds bulk files in Blob storage for Snowflake.</text>
+<rect x="20" y="110" width="210" height="820" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="38.0" y="142.0" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="1.2">SOURCES</text>
+<text x="38.0" y="162.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">network devices</text>
+<rect x="250" y="110" width="450" height="820" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<circle cx="279" cy="137" r="11" fill="#0F172A"/>
+<text x="279.0" y="141.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<text x="298.0" y="142.0" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="1.2">COLLECTION &amp; PUBLISH</text>
+<text x="268.0" y="162.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">collectors · message bus · landing zone</text>
+<rect x="720" y="110" width="680" height="820" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<circle cx="749" cy="137" r="11" fill="#0F172A"/>
+<text x="749.0" y="141.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<text x="768.0" y="142.0" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="1.2">ETL</text>
+<text x="738.0" y="162.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">consume · parse · transform · load</text>
+<rect x="1420" y="110" width="320" height="820" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<circle cx="1449" cy="137" r="11" fill="#0F172A"/>
+<text x="1449.0" y="141.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<text x="1468.0" y="142.0" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="1.2">STORAGE</text>
+<text x="1438.0" y="162.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">fit-for-purpose targets</text>
+<rect x="1760" y="110" width="320" height="820" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<circle cx="1789" cy="137" r="11" fill="#0F172A"/>
+<text x="1789.0" y="141.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<text x="1808.0" y="142.0" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="1.2">REPORTING</text>
+<text x="1778.0" y="162.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">engineers &amp; applications</text>
+<path d="M202,515 L266,515" fill="none" stroke="#E08A00" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-json)"/>
+<path d="M448,515 L508,515" fill="none" stroke="#E08A00" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-json)"/>
+<path d="M680,390 L963,390" fill="none" stroke="#E08A00" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-json)"/>
+<path d="M1155,390 L1498,390" fill="none" stroke="#E08A00" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-json)"/>
+<path d="M680,460 L1183,460" fill="none" stroke="#E08A00" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-json)"/>
+<path d="M1375,460 C1442.65,460 1430.35,602 1498,602" fill="none" stroke="#E08A00" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-json)"/>
+<path d="M680,570 L743,570" fill="none" stroke="#E08A00" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-json)"/>
+<path d="M935,570 L1183,570" fill="none" stroke="#E08A00" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-json)"/>
+<path d="M1375,570 C1442.65,570 1430.35,620 1498,620" fill="none" stroke="#E08A00" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-json)"/>
+<path d="M1375,570 C1442.65,570 1430.35,838 1498,838" fill="none" stroke="#E08A00" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-json)"/>
+<path d="M202,780 L266,780" fill="none" stroke="#7C4DDB" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-xml)"/>
+<path d="M448,780 L508,780" fill="none" stroke="#7C4DDB" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-xml)"/>
+<path d="M680,780 L743,780" fill="none" stroke="#7C4DDB" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-xml)"/>
+<path d="M935,780 L963,780" fill="none" stroke="#7C4DDB" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-xml)"/>
+<path d="M1155,780 C1170.4,780 1167.6,720 1183,720" fill="none" stroke="#7C4DDB" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-xml)"/>
+<path d="M1155,780 C1170.4,780 1167.6,850 1183,850" fill="none" stroke="#7C4DDB" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-xml)"/>
+<path d="M1375,720 C1442.65,720 1430.35,642 1498,642" fill="none" stroke="#7C4DDB" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-xml)"/>
+<path d="M1375,850 C1442.65,850 1430.35,862 1498,862" fill="none" stroke="#7C4DDB" stroke-width="2.4" opacity="0.08" marker-end="url(#ah-xml)"/>
+<path d="M1600.0,811.0 L1600.0,677.0" fill="none" stroke="#7C8BA1" stroke-width="2.4" stroke-dasharray="6 5" opacity="0.08" marker-end="url(#ah-ext)"/>
+<path d="M1700,390 C1764.9,390 1753.1,330 1818,330" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="0.08" marker-end="url(#ah-read)"/>
+<path d="M1700,850 C1764.9,850 1753.1,862 1818,862" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="0.08" marker-end="url(#ah-read)"/>
+<path d="M202,275 L266,275" fill="none" stroke="#0E9F8E" stroke-width="2.4" opacity="1" marker-end="url(#ah-csv)"/>
+<path d="M448,275 L508,275" fill="none" stroke="#0E9F8E" stroke-width="2.4" opacity="1" marker-end="url(#ah-csv)"/>
+<path d="M680,220 L743,220" fill="none" stroke="#0E9F8E" stroke-width="2.4" opacity="1" marker-end="url(#ah-csv)"/>
+<path d="M935,220 L1498,220" fill="none" stroke="#0E9F8E" stroke-width="2.4" opacity="1" marker-end="url(#ah-csv)"/>
+<path d="M680,330 L743,330" fill="none" stroke="#0E9F8E" stroke-width="2.4" opacity="1" marker-end="url(#ah-csv)"/>
+<path d="M935,330 L1183,330" fill="none" stroke="#0E9F8E" stroke-width="2.4" opacity="1" marker-end="url(#ah-csv)"/>
+<path d="M1375,330 C1442.65,330 1430.35,584 1498,584" fill="none" stroke="#0E9F8E" stroke-width="2.4" opacity="1" marker-end="url(#ah-csv)"/>
+<path d="M1700,208 C1764.9,208 1753.1,200 1818,200" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="1" marker-end="url(#ah-read)"/>
+<path d="M1700,232 C1764.9,232 1753.1,316 1818,316" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="1" marker-end="url(#ah-read)"/>
+<path d="M1700,580 C1764.9,580 1753.1,344 1818,344" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="1" marker-end="url(#ah-read)"/>
+<path d="M1700,600 C1764.9,600 1753.1,470 1818,470" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="1" marker-end="url(#ah-read)"/>
+<path d="M1700,620 C1764.9,620 1753.1,590 1818,590" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="1" marker-end="url(#ah-read)"/>
+<path d="M1700,640 C1764.9,640 1753.1,710 1818,710" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="1" marker-end="url(#ah-read)"/>
+<path d="M1700,660 C1764.9,660 1753.1,838 1818,838" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="1" marker-end="url(#ah-read)"/>
+<g opacity="1">
+<rect x="42" y="244.0" width="160" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="42" y="244.0" width="6" height="62" fill="#0E9F8E"/>
+<rect x="42" y="244.0" width="160" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="60.0" y="271.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">CSV files</text>
+<text x="60.0" y="290.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">network devices</text>
+</g>
+<g opacity="0.14">
+<rect x="42" y="484.0" width="160" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="42" y="484.0" width="6" height="62" fill="#E08A00"/>
+<rect x="42" y="484.0" width="160" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="60.0" y="511.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">JSON messages</text>
+<text x="60.0" y="530.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">network devices</text>
+</g>
+<g opacity="0.14">
+<rect x="42" y="749.0" width="160" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="42" y="749.0" width="6" height="62" fill="#7C4DDB"/>
+<rect x="42" y="749.0" width="160" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="60.0" y="776.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">XML files</text>
+<text x="60.0" y="795.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">network devices</text>
+</g>
+<g opacity="1">
+<rect x="268" y="244.0" width="180" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="268" y="244.0" width="6" height="62" fill="#0E9F8E"/>
+<rect x="268" y="244.0" width="180" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="286.0" y="271.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Logstash</text>
+<text x="286.0" y="290.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">collect &amp; publish</text>
+</g>
+<g opacity="0.14">
+<rect x="268" y="484.0" width="180" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="268" y="484.0" width="6" height="62" fill="#E08A00"/>
+<rect x="268" y="484.0" width="180" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="286.0" y="511.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Telegraf + Python</text>
+<text x="286.0" y="530.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">custom collectors</text>
+</g>
+<g opacity="0.14">
+<rect x="268" y="741.0" width="180" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="268" y="741.0" width="6" height="78" fill="#7C4DDB"/>
+<rect x="268" y="741.0" width="180" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="286.0" y="768.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">SFTP collection</text>
+<text x="286.0" y="787.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">bulk file pull</text>
+<text x="286.0" y="803.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">HTTPS push to Blob</text>
+</g>
+<g opacity="1">
+<rect x="510" y="190.0" width="170" height="410" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="510" y="190.0" width="6" height="205.0" fill="#0E9F8E"/>
+<rect x="510" y="395.0" width="6" height="205.0" fill="#E08A00"/>
+<rect x="510" y="190.0" width="170" height="410" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="528.0" y="383.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Confluent Kafka</text>
+<text x="528.0" y="402.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">event streaming</text>
+<text x="528.0" y="418.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">CSV + JSON topics</text>
+</g>
+<g opacity="0.14">
+<rect x="510" y="741.0" width="170" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="510" y="741.0" width="6" height="78" fill="#7C4DDB"/>
+<rect x="510" y="741.0" width="170" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="528.0" y="768.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Azure Blob Storage</text>
+<text x="528.0" y="787.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">landing zone</text>
+<text x="528.0" y="803.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">bulk file loading</text>
+</g>
+<g opacity="1">
+<rect x="745" y="189.0" width="190" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="745" y="189.0" width="6" height="62" fill="#0E9F8E"/>
+<rect x="745" y="189.0" width="190" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="763.0" y="216.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Logstash</text>
+<text x="763.0" y="235.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">consume · parse · load</text>
+</g>
+<g opacity="1">
+<rect x="745" y="299.0" width="190" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="745" y="299.0" width="6" height="62" fill="#0E9F8E"/>
+<rect x="745" y="299.0" width="190" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="763.0" y="326.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">GoLang parser</text>
+<text x="763.0" y="345.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">builds bulk files</text>
+</g>
+<g opacity="1">
+<rect x="1185" y="299.0" width="190" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1185" y="299.0" width="6" height="62" fill="#0E9F8E"/>
+<rect x="1185" y="299.0" width="190" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1203.0" y="326.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Azure Blob staging</text>
+<text x="1203.0" y="345.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">bulk files for load</text>
+</g>
+<g opacity="0.14">
+<rect x="965" y="359.0" width="190" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="965" y="359.0" width="6" height="62" fill="#E08A00"/>
+<rect x="965" y="359.0" width="190" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="983.0" y="386.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Telegraf</text>
+<text x="983.0" y="405.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">consume · write metrics</text>
+</g>
+<g opacity="0.14">
+<rect x="1185" y="429.0" width="190" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1185" y="429.0" width="6" height="62" fill="#E08A00"/>
+<rect x="1185" y="429.0" width="190" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1203.0" y="456.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Snowpipe Streaming</text>
+<text x="1203.0" y="475.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">small set · direct load</text>
+</g>
+<g opacity="0.14">
+<rect x="745" y="539.0" width="190" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="745" y="539.0" width="6" height="62" fill="#E08A00"/>
+<rect x="745" y="539.0" width="190" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="763.0" y="566.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">GoLang parser</text>
+<text x="763.0" y="585.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">builds bulk Parquet</text>
+</g>
+<g opacity="0.14">
+<rect x="1185" y="539.0" width="190" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1185" y="539.0" width="6" height="62" fill="#E08A00"/>
+<rect x="1185" y="539.0" width="190" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1203.0" y="566.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Bulk Parquet files</text>
+<text x="1203.0" y="585.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">two load targets</text>
+</g>
+<g opacity="0.14">
+<rect x="745" y="749.0" width="190" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="745" y="749.0" width="6" height="62" fill="#7C4DDB"/>
+<rect x="745" y="749.0" width="190" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="763.0" y="776.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Blob events</text>
+<text x="763.0" y="795.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">new-file notifications</text>
+</g>
+<g opacity="0.14">
+<rect x="965" y="741.0" width="190" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="965" y="741.0" width="6" height="78" fill="#7C4DDB"/>
+<rect x="965" y="741.0" width="190" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="983.0" y="768.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Java XML parser</text>
+<text x="983.0" y="787.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">listeners / tasks</text>
+<text x="983.0" y="803.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">emits load-ready CSV</text>
+</g>
+<g opacity="0.14">
+<rect x="1185" y="689.0" width="190" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1185" y="689.0" width="6" height="62" fill="#7C4DDB"/>
+<rect x="1185" y="689.0" width="190" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1203.0" y="716.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Load queues</text>
+<text x="1203.0" y="735.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">load-ready CSV files</text>
+</g>
+<g opacity="0.14">
+<rect x="1185" y="819.0" width="190" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1185" y="819.0" width="6" height="62" fill="#7C4DDB"/>
+<rect x="1185" y="819.0" width="190" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1203.0" y="846.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Parquet conversion</text>
+<text x="1203.0" y="865.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">CSV → Parquet</text>
+</g>
+<g opacity="1">
+<rect x="1500" y="189.0" width="200" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1500" y="189.0" width="6" height="62" fill="#334155"/>
+<rect x="1500" y="189.0" width="200" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1518.0" y="216.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Elasticsearch</text>
+<text x="1518.0" y="235.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">logging · platform health</text>
+</g>
+<g opacity="0.14">
+<rect x="1500" y="359.0" width="200" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1500" y="359.0" width="6" height="62" fill="#334155"/>
+<rect x="1500" y="359.0" width="200" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1518.0" y="386.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">InfluxDB</text>
+<text x="1518.0" y="405.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">time series</text>
+</g>
+<g opacity="1">
+<rect x="1500" y="565.0" width="200" height="110" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1500" y="565.0" width="6" height="110" fill="#334155"/>
+<rect x="1500" y="565.0" width="200" height="110" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1518.0" y="608.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Snowflake</text>
+<text x="1518.0" y="627.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">performance aggregation</text>
+<text x="1518.0" y="643.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">&amp; analytics</text>
+</g>
+<g opacity="0.14">
+<rect x="1500" y="811.0" width="200" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1500" y="811.0" width="6" height="78" fill="#334155"/>
+<rect x="1500" y="811.0" width="200" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1518.0" y="838.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Apache Iceberg</text>
+<text x="1518.0" y="857.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">data lakehouse</text>
+<text x="1518.0" y="873.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">lower-cost storage</text>
+</g>
+<g opacity="1">
+<rect x="1820" y="169.0" width="220" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1820" y="169.0" width="6" height="62" fill="#2563EB"/>
+<rect x="1820" y="169.0" width="220" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1838.0" y="196.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Kibana</text>
+<text x="1838.0" y="215.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">search &amp; dashboards</text>
+</g>
+<g opacity="1">
+<rect x="1820" y="299.0" width="220" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1820" y="299.0" width="6" height="62" fill="#2563EB"/>
+<rect x="1820" y="299.0" width="220" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1838.0" y="326.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Grafana</text>
+<text x="1838.0" y="345.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">dashboards across stores</text>
+</g>
+<g opacity="1">
+<rect x="1820" y="439.0" width="220" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1820" y="439.0" width="6" height="62" fill="#2563EB"/>
+<rect x="1820" y="439.0" width="220" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1838.0" y="466.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Microsoft Power BI</text>
+<text x="1838.0" y="485.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">reports &amp; dashboards</text>
+</g>
+<g opacity="1">
+<rect x="1820" y="559.0" width="220" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1820" y="559.0" width="6" height="62" fill="#2563EB"/>
+<rect x="1820" y="559.0" width="220" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1838.0" y="586.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Palantir</text>
+<text x="1838.0" y="605.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">direct extracts</text>
+</g>
+<g opacity="1">
+<rect x="1820" y="679.0" width="220" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1820" y="679.0" width="6" height="62" fill="#2563EB"/>
+<rect x="1820" y="679.0" width="220" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1838.0" y="706.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Analyst desktop tools</text>
+<text x="1838.0" y="725.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">JDBC connections</text>
+</g>
+<g opacity="1">
+<rect x="1820" y="819.0" width="220" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1820" y="819.0" width="6" height="62" fill="#2563EB"/>
+<rect x="1820" y="819.0" width="220" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1838.0" y="846.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Databricks</text>
+<text x="1838.0" y="865.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">Snowflake + Iceberg</text>
+</g>
+<g opacity="0.08"><rect x="895.0" y="441.0" width="73.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="931.5" y="453.0" font-size="11.5" font-weight="600" fill="#E08A00" text-anchor="middle">streaming</text></g>
+<g opacity="0.08"><rect x="1029.5" y="551.0" width="59.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="1059.0" y="563.0" font-size="11.5" font-weight="600" fill="#E08A00" text-anchor="middle">Parquet</text></g>
+<g opacity="0.08"><rect x="1606.0" y="735.0" width="115.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="1610.0" y="747.0" font-size="11.5" font-weight="600" fill="#7C8BA1" text-anchor="start">external tables</text></g>
+<g opacity="1"><rect x="1427.5" y="201.0" width="45.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="1450.0" y="213.0" font-size="11.5" font-weight="600" fill="#0E9F8E" text-anchor="middle">index</text></g>
+<g opacity="1"><rect x="1019.0" y="311.0" width="80.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="1059.0" y="323.0" font-size="11.5" font-weight="600" fill="#0E9F8E" text-anchor="middle">bulk files</text></g>
+<g opacity="1"><rect x="1403.5" y="408.0" width="73.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="1440.0" y="420.0" font-size="11.5" font-weight="600" fill="#0E9F8E" text-anchor="middle">bulk load</text></g>
+<g opacity="1"><rect x="1741.0" y="668.0" width="38.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="1760.0" y="680.0" font-size="11.5" font-weight="600" fill="#64748B" text-anchor="middle">JDBC</text></g>
+<text x="30.0" y="980.0" font-size="12" font-weight="700" fill="#64748B" text-anchor="start" letter-spacing="1.2">LEGEND</text>
+<line x1="120" y1="975" x2="160" y2="975" stroke="#0E9F8E" stroke-width="2.6" marker-end="url(#ah-csv)"/>
+<text x="170.0" y="979.5" font-size="13" font-weight="500" fill="#0F172A" text-anchor="start">CSV flow</text>
+<line x1="270.8" y1="975" x2="310.8" y2="975" stroke="#E08A00" stroke-width="2.6" marker-end="url(#ah-json)"/>
+<text x="320.8" y="979.5" font-size="13" font-weight="500" fill="#0F172A" text-anchor="start">JSON flow</text>
+<line x1="429.2" y1="975" x2="469.2" y2="975" stroke="#7C4DDB" stroke-width="2.6" marker-end="url(#ah-xml)"/>
+<text x="479.2" y="979.5" font-size="13" font-weight="500" fill="#0F172A" text-anchor="start">XML flow</text>
+<line x1="580.0" y1="975" x2="620.0" y2="975" stroke="#94A3B8" stroke-width="1.6" marker-end="url(#ah-read)"/>
+<text x="630.0" y="979.5" font-size="13" font-weight="500" fill="#0F172A" text-anchor="start">Query / read</text>
+<line x1="761.2" y1="975" x2="801.2" y2="975" stroke="#7C8BA1" stroke-width="2.6" stroke-dasharray="6 5" marker-end="url(#ah-ext)"/>
+<text x="811.2" y="979.5" font-size="13" font-weight="500" fill="#0F172A" text-anchor="start">Iceberg external tables in Snowflake</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTowMzczYjc0MC02ZGI1LTQzMzgtYmYyZS1hMTIxZjFjMzkzOGMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaLCmIbaWfRTXdYgVjcIRUQUAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo5ZjM1ZjRiNC05MDRmLTRhYjYtYmFkYy0yYjNlYmYyYTc0ZTdscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoah+jaR8ki8R8XTWhfD7O3AAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggguF0wDUDYLuy+iClEWEPYCInXQ9X0/jrjdh5kHAtJkSkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaA6iPYq0Yo0v9uoNFBzbvC8AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIFQQ2tUB6HJ5Ms5kbo5mVSHdUnXnpG23/yKuqMMtpLcLZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GWftZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjAzNzNiNzQwLTZkYjUtNDMzOC1iZjJlLWExMjFmMWMzOTM4Yy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjg4YmMxYzgzLTcwZWUtNGViMS05YTYxLTMxOWU1YjYwZjFiZHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCC4XTANQNgu7L6IKURYQ9gIiddD1fT+OuN2HmQcC0mRKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggmzmy7FvJ5EYFjWxruZoEzh5UM/Kik3seAqoqr0KnKV+iY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggAisiRFXndasGcEGbBBqVEn3C1oLHaPViF72EaYP8a050Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQMij3A83IGUEoMUANHlH+0xhoXqZj3SYYtvvJgKdGtU2489/1nScqfLJmD0UOShhAkTu32bHSRya5LVR60Mpp8E=</c2pa:manifest></metadata></svg>

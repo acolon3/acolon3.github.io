@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2320" height="1090" viewBox="0 0 2320 1090" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<defs>
+<marker id="ah-flink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0E9F8E"/></marker>
+<marker id="ah-msk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#E08A00"/></marker>
+<marker id="ah-py" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7C4DDB"/></marker>
+<marker id="ah-read" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94A3B8"/></marker>
+<marker id="ah-ext" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7C8BA1"/></marker>
+<marker id="ah-nl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#DB2777"/></marker>
+<marker id="ah-store" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+</defs>
+<rect width="2320" height="1090" fill="#FFFFFF"/>
+<text x="30.0" y="50.0" font-size="28" font-weight="700" fill="#0F172A" text-anchor="start">Telematics Data Platform · End-to-End Data Flow</text>
+<text x="30.0" y="80.0" font-size="15" font-weight="400" fill="#64748B" text-anchor="start">JSON events from fleet telematics devices, published to Kafka on Amazon MSK and processed by one of three paths into Redshift, Iceberg and ClickHouse.</text>
+<rect x="20" y="110" width="210" height="855" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="38.0" y="142.0" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="1.2">SOURCES</text>
+<text x="38.0" y="162.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">fleet vehicles</text>
+<rect x="250" y="110" width="410" height="855" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<circle cx="279" cy="137" r="11" fill="#0F172A"/>
+<text x="279.0" y="141.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<text x="298.0" y="142.0" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="1.2">COLLECTION &amp; PUBLISH</text>
+<text x="268.0" y="162.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">collector · message bus</text>
+<rect x="680" y="110" width="740" height="855" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<circle cx="709" cy="137" r="11" fill="#0F172A"/>
+<text x="709.0" y="141.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<text x="728.0" y="142.0" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="1.2">ETL</text>
+<text x="698.0" y="162.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">consume · business rules · land · load</text>
+<rect x="1440" y="110" width="280" height="855" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<circle cx="1469" cy="137" r="11" fill="#0F172A"/>
+<text x="1469.0" y="141.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<text x="1488.0" y="142.0" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="1.2">STORAGE</text>
+<text x="1458.0" y="162.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">fit-for-purpose targets</text>
+<rect x="1740" y="110" width="560" height="855" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<circle cx="1769" cy="137" r="11" fill="#0F172A"/>
+<text x="1769.0" y="141.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<text x="1788.0" y="142.0" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="1.2">REPORTING</text>
+<text x="1758.0" y="162.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">engineers, analysts &amp; customers</text>
+<path d="M212,470 L266,470" fill="none" stroke="#334155" stroke-width="2.4" opacity="1" marker-end="url(#ah-store)"/>
+<path d="M443,470 L468,470" fill="none" stroke="#334155" stroke-width="2.4" opacity="1" marker-end="url(#ah-store)"/>
+<path d="M640,250 L703,250" fill="none" stroke="#0E9F8E" stroke-width="2.4" opacity="1" marker-end="url(#ah-flink)"/>
+<path d="M920,250 L943,250" fill="none" stroke="#0E9F8E" stroke-width="2.4" opacity="1" marker-end="url(#ah-flink)"/>
+<path d="M1150,250 L1188,250" fill="none" stroke="#0E9F8E" stroke-width="2.4" opacity="1" marker-end="url(#ah-flink)"/>
+<path d="M1395,250 C1435.15,250 1427.85,320 1468,320" fill="none" stroke="#0E9F8E" stroke-width="2.4" opacity="1" marker-end="url(#ah-flink)"/>
+<path d="M640,470 L1188,470" fill="none" stroke="#E08A00" stroke-width="2.4" opacity="1" marker-end="url(#ah-msk)"/>
+<path d="M1395,470 C1435.15,470 1427.85,400 1468,400" fill="none" stroke="#E08A00" stroke-width="2.4" opacity="1" marker-end="url(#ah-msk)"/>
+<path d="M640,700 L703,700" fill="none" stroke="#7C4DDB" stroke-width="2.4" opacity="1" marker-end="url(#ah-py)"/>
+<path d="M920,700 L1188,700" fill="none" stroke="#7C4DDB" stroke-width="2.4" opacity="1" marker-end="url(#ah-py)"/>
+<path d="M1395,700 L1468,700" fill="none" stroke="#7C4DDB" stroke-width="2.4" opacity="1" marker-end="url(#ah-py)"/>
+<path d="M1540.0,661.0 L1540.0,437.0" fill="none" stroke="#7C8BA1" stroke-width="2.4" stroke-dasharray="6 5" opacity="1" marker-end="url(#ah-ext)"/>
+<path d="M1540.0,739.0 L1540.0,859.0" fill="none" stroke="#7C8BA1" stroke-width="2.4" stroke-dasharray="6 5" opacity="1" marker-end="url(#ah-ext)"/>
+<path d="M1690,310 C1730.15,310 1722.85,208 1763,208" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="1" marker-end="url(#ah-read)"/>
+<path d="M1690,676 C1730.15,676 1722.85,232 1763,232" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="1" marker-end="url(#ah-read)"/>
+<path d="M1690,345 C1730.15,345 1722.85,398 1763,398" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="1" marker-end="url(#ah-read)"/>
+<path d="M1690,880 C1730.15,880 1722.85,422 1763,422" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="1" marker-end="url(#ah-read)"/>
+<path d="M1690,390 C1730.15,390 1722.85,628 1763,628" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="1" marker-end="url(#ah-read)"/>
+<path d="M1690,900 C1730.15,900 1722.85,652 1763,652" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="1" marker-end="url(#ah-read)"/>
+<path d="M1995,640 C2021.4,640 2016.6,626 2043,626" fill="none" stroke="#94A3B8" stroke-width="1.6" opacity="1" marker-end="url(#ah-read)"/>
+<path d="M2160.0,687.0 L2160.0,829.0" fill="none" stroke="#DB2777" stroke-width="2.4" stroke-dasharray="6 5" opacity="1" marker-end="url(#ah-nl)"/>
+<path d="M2045,870 L1997,870" fill="none" stroke="#DB2777" stroke-width="2.4" stroke-dasharray="6 5" opacity="1" marker-end="url(#ah-nl)"/>
+<path d="M1880.0,831.0 L1880.0,681.0" fill="none" stroke="#DB2777" stroke-width="2.4" stroke-dasharray="6 5" opacity="1" marker-end="url(#ah-nl)"/>
+<g opacity="1">
+<rect x="42" y="431.0" width="170" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="42" y="431.0" width="6" height="26.0" fill="#0E9F8E"/>
+<rect x="42" y="457.0" width="6" height="26.0" fill="#E08A00"/>
+<rect x="42" y="483.0" width="6" height="26.0" fill="#7C4DDB"/>
+<rect x="42" y="431.0" width="170" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="60.0" y="458.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Telematics devices</text>
+<text x="60.0" y="477.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">one per fleet vehicle</text>
+<text x="60.0" y="493.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">JSON events</text>
+</g>
+<g opacity="1">
+<rect x="268" y="431.0" width="175" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="268" y="431.0" width="6" height="26.0" fill="#0E9F8E"/>
+<rect x="268" y="457.0" width="6" height="26.0" fill="#E08A00"/>
+<rect x="268" y="483.0" width="6" height="26.0" fill="#7C4DDB"/>
+<rect x="268" y="431.0" width="175" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="286.0" y="458.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">C++ collector</text>
+<text x="286.0" y="477.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">collects JSON events</text>
+<text x="286.0" y="493.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">publishes to Kafka</text>
+</g>
+<g opacity="1">
+<rect x="470" y="170.0" width="170" height="600" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="470" y="170.0" width="6" height="200.0" fill="#0E9F8E"/>
+<rect x="470" y="370.0" width="6" height="200.0" fill="#E08A00"/>
+<rect x="470" y="570.0" width="6" height="200.0" fill="#7C4DDB"/>
+<rect x="470" y="170.0" width="170" height="600" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="488.0" y="434.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Apache Kafka</text>
+<text x="488.0" y="453.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">on Amazon MSK</text>
+<text x="488.0" y="469.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">JSON event topics</text>
+<text x="488.0" y="485.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start"></text>
+<text x="488.0" y="501.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">consumed by one of</text>
+<text x="488.0" y="517.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">three paths, by data</text>
+</g>
+<g opacity="1">
+<rect x="705" y="211.0" width="215" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="705" y="211.0" width="6" height="78" fill="#0E9F8E"/>
+<rect x="705" y="211.0" width="215" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="723.0" y="238.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Apache Flink</text>
+<text x="723.0" y="257.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">on AWS Managed Service (AMS)</text>
+<text x="723.0" y="273.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">business rules · quality checks</text>
+</g>
+<g opacity="1">
+<rect x="945" y="219.0" width="205" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="945" y="219.0" width="6" height="62" fill="#0E9F8E"/>
+<rect x="945" y="219.0" width="205" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="963.0" y="246.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Parquet on S3</text>
+<text x="963.0" y="265.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">landed files</text>
+</g>
+<g opacity="1">
+<rect x="1190" y="219.0" width="205" height="62" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1190" y="219.0" width="6" height="62" fill="#0E9F8E"/>
+<rect x="1190" y="219.0" width="205" height="62" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1208.0" y="246.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Redshift COPY</text>
+<text x="1208.0" y="265.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">bulk load</text>
+</g>
+<g opacity="1">
+<rect x="1190" y="423.0" width="205" height="94" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1190" y="423.0" width="6" height="94" fill="#E08A00"/>
+<rect x="1190" y="423.0" width="205" height="94" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1208.0" y="450.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Redshift streaming</text>
+<text x="1208.0" y="469.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">reads MSK topic directly</text>
+<text x="1208.0" y="485.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">materialized views</text>
+<text x="1208.0" y="501.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">low-latency data</text>
+</g>
+<g opacity="1">
+<rect x="705" y="661.0" width="215" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="705" y="661.0" width="6" height="78" fill="#7C4DDB"/>
+<rect x="705" y="661.0" width="215" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="723.0" y="688.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Python consumer</text>
+<text x="723.0" y="707.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">in-house process</text>
+<text x="723.0" y="723.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">business rules</text>
+</g>
+<g opacity="1">
+<rect x="1190" y="661.0" width="205" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1190" y="661.0" width="6" height="78" fill="#7C4DDB"/>
+<rect x="1190" y="661.0" width="205" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1208.0" y="688.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Amazon S3 Tables</text>
+<text x="1208.0" y="707.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">Parquet files</text>
+<text x="1208.0" y="723.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">feed three data stores</text>
+</g>
+<g opacity="1">
+<rect x="1470" y="285.0" width="220" height="150" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1470" y="285.0" width="6" height="150" fill="#334155"/>
+<rect x="1470" y="285.0" width="220" height="150" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1488.0" y="348.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Amazon Redshift</text>
+<text x="1488.0" y="367.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">performance aggregation</text>
+<text x="1488.0" y="383.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">&amp; analytics</text>
+</g>
+<g opacity="1">
+<rect x="1470" y="661.0" width="220" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1470" y="661.0" width="6" height="78" fill="#334155"/>
+<rect x="1470" y="661.0" width="220" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1488.0" y="688.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Apache Iceberg</text>
+<text x="1488.0" y="707.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">lakehouse · Glue catalog</text>
+<text x="1488.0" y="723.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">lower-cost storage</text>
+</g>
+<g opacity="1">
+<rect x="1470" y="861.0" width="220" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1470" y="861.0" width="6" height="78" fill="#334155"/>
+<rect x="1470" y="861.0" width="220" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1488.0" y="888.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">ClickHouse</text>
+<text x="1488.0" y="907.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">low-latency app</text>
+<text x="1488.0" y="923.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">dashboards &amp; reports</text>
+</g>
+<g opacity="1">
+<rect x="1765" y="181.0" width="230" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1765" y="181.0" width="6" height="78" fill="#2563EB"/>
+<rect x="1765" y="181.0" width="230" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1783.0" y="208.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Amazon Athena</text>
+<text x="1783.0" y="227.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">engineers · SQL on</text>
+<text x="1783.0" y="243.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">S3 Tables &amp; Redshift</text>
+</g>
+<g opacity="1">
+<rect x="1765" y="371.0" width="230" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1765" y="371.0" width="6" height="78" fill="#2563EB"/>
+<rect x="1765" y="371.0" width="230" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1783.0" y="398.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Analyst desktop tools</text>
+<text x="1783.0" y="417.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">JDBC to ClickHouse</text>
+<text x="1783.0" y="433.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">&amp; Redshift</text>
+</g>
+<g opacity="1">
+<rect x="1765" y="601.0" width="230" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1765" y="601.0" width="6" height="78" fill="#2563EB"/>
+<rect x="1765" y="601.0" width="230" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1783.0" y="628.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">GraphQL API</text>
+<text x="1783.0" y="647.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">queries ClickHouse</text>
+<text x="1783.0" y="663.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">&amp; Redshift</text>
+</g>
+<g opacity="1">
+<rect x="1765" y="831.0" width="230" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="1765" y="831.0" width="6" height="78" fill="#2563EB"/>
+<rect x="1765" y="831.0" width="230" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="1783.0" y="858.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Cube</text>
+<text x="1783.0" y="877.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">semantic layer</text>
+<text x="1783.0" y="893.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">definitions</text>
+</g>
+<g opacity="1">
+<rect x="2045" y="593.0" width="230" height="94" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="2045" y="593.0" width="6" height="94" fill="#2563EB"/>
+<rect x="2045" y="593.0" width="230" height="94" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="2063.0" y="620.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Customer application</text>
+<text x="2063.0" y="639.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">client dashboards</text>
+<text x="2063.0" y="655.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">&amp; reports</text>
+<text x="2063.0" y="671.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">natural-language queries</text>
+</g>
+<g opacity="1">
+<rect x="2045" y="831.0" width="230" height="78" rx="10" fill="#fff" stroke="#CBD5E1"/>
+<rect x="2045" y="831.0" width="6" height="78" fill="#2563EB"/>
+<rect x="2045" y="831.0" width="230" height="78" rx="10" fill="none" stroke="#CBD5E1"/>
+<text x="2063.0" y="858.0" font-size="14.5" font-weight="650" fill="#0F172A" text-anchor="start">Amazon Bedrock</text>
+<text x="2063.0" y="877.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">LLM for natural-</text>
+<text x="2063.0" y="893.0" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">language queries</text>
+</g>
+<g opacity="1"><rect x="1416.0" y="258.0" width="38.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="1435.0" y="270.0" font-size="11.5" font-weight="600" fill="#0E9F8E" text-anchor="middle">COPY</text></g>
+<g opacity="1"><rect x="779.5" y="451.0" width="269.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="914.0" y="463.0" font-size="11.5" font-weight="600" fill="#E08A00" text-anchor="middle">Redshift streaming ingestion from MSK</text></g>
+<g opacity="1"><rect x="1024.5" y="681.0" width="59.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="1054.0" y="693.0" font-size="11.5" font-weight="600" fill="#7C4DDB" text-anchor="middle">Parquet</text></g>
+<g opacity="1"><rect x="1412.5" y="681.0" width="38.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="1431.5" y="693.0" font-size="11.5" font-weight="600" fill="#7C4DDB" text-anchor="middle">Glue</text></g>
+<g opacity="1"><rect x="1546.0" y="541.0" width="115.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="1550.0" y="553.0" font-size="11.5" font-weight="600" fill="#7C8BA1" text-anchor="start">external tables</text></g>
+<g opacity="1"><rect x="1546.0" y="791.0" width="136.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="1550.0" y="803.0" font-size="11.5" font-weight="600" fill="#7C8BA1" text-anchor="start">materialized views</text></g>
+<g opacity="1"><rect x="2166.0" y="750.0" width="87.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="2170.0" y="762.0" font-size="11.5" font-weight="600" fill="#DB2777" text-anchor="start">NL question</text></g>
+<g opacity="1"><rect x="1998.5" y="851.0" width="45.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="2021.0" y="863.0" font-size="11.5" font-weight="600" fill="#DB2777" text-anchor="middle">query</text></g>
+<g opacity="1"><rect x="1886.0" y="748.0" width="108.0" height="17" rx="4" fill="#fff" opacity="0.92"/>
+<text x="1890.0" y="760.0" font-size="11.5" font-weight="600" fill="#DB2777" text-anchor="start">semantic query</text></g>
+<text x="30.0" y="1015.0" font-size="12" font-weight="700" fill="#64748B" text-anchor="start" letter-spacing="1.2">LEGEND</text>
+<line x1="120" y1="1010" x2="160" y2="1010" stroke="#0E9F8E" stroke-width="2.6" marker-end="url(#ah-flink)"/>
+<text x="170.0" y="1014.5" font-size="13" font-weight="500" fill="#0F172A" text-anchor="start">Flink path</text>
+<line x1="286.0" y1="1010" x2="326.0" y2="1010" stroke="#E08A00" stroke-width="2.6" marker-end="url(#ah-msk)"/>
+<text x="336.0" y="1014.5" font-size="13" font-weight="500" fill="#0F172A" text-anchor="start">MSK streaming path</text>
+<line x1="512.8" y1="1010" x2="552.8" y2="1010" stroke="#7C4DDB" stroke-width="2.6" marker-end="url(#ah-py)"/>
+<text x="562.8" y="1014.5" font-size="13" font-weight="500" fill="#0F172A" text-anchor="start">Python / S3 Tables path</text>
+<line x1="777.5999999999999" y1="1010" x2="817.5999999999999" y2="1010" stroke="#7C8BA1" stroke-width="2.6" stroke-dasharray="6 5" marker-end="url(#ah-ext)"/>
+<text x="827.6" y="1014.5" font-size="13" font-weight="500" fill="#0F172A" text-anchor="start">Iceberg-backed tables</text>
+<line x1="1027.1999999999998" y1="1010" x2="1067.1999999999998" y2="1010" stroke="#94A3B8" stroke-width="1.6" marker-end="url(#ah-read)"/>
+<text x="1077.2" y="1014.5" font-size="13" font-weight="500" fill="#0F172A" text-anchor="start">Query / read</text>
+<line x1="1208.3999999999999" y1="1010" x2="1248.3999999999999" y2="1010" stroke="#DB2777" stroke-width="2.6" stroke-dasharray="6 5" marker-end="url(#ah-nl)"/>
+<text x="1258.4" y="1014.5" font-size="13" font-weight="500" fill="#0F172A" text-anchor="start">Natural-language query</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo4MmJlNmI0NS03ZTQwLTQ0OWMtYTE0NS1hNDViMjBmZjgwMjgAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaOWISG1o9gj4Sqsv4et/tKsAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDphNmViOTNlOS03YzIxLTQ2NWYtOWZlYi00ZmMyNTE5YjU0YzZscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoeutosjtFrpgKekaBm9ydiQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgglZlWzW10IWMLHA1VEDZj7bPFRUbAGx+Nd5kYR5AUDmWkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaE7hN9fLF8UWmxpXBjCz3oMAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIOiWrmxPxZ0cWuq5T/CMteya5rIYdsoHKBjZOshm3TYwZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GVmEZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjgyYmU2YjQ1LTdlNDAtNDQ5Yy1hMTQ1LWE0NWIyMGZmODAyOC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjQ2ZTU2YWVlLWVlOGYtNGIwZi05ZmMzLTgwNjQ3MjAzMjQwZXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCVmVbNbXQhYwscDVUQNmPts8VFRsAbH413mRhHkBQOZaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggZBry7OBvBeE5bs3nCyYHXmD9FOzhn5kfHoPuGbgCf/iiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggEmPB+Hd5sWESKDm77eRAGXHlBiiojl4DYM7h7sGmm9V0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQN+EPDltwskpSihBMG52pvNTbS5YQ/HAPV/BG6ofMC79bsIQJDBeQ+AD12R/dRIhbBMrUVx3gDDAW54OcsElJCo=</c2pa:manifest></metadata></svg>

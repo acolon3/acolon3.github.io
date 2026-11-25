@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anthony M. Colón · Data Platform Architecture</title>
+<meta name="description" content="Architecture diagrams and write-ups of data platforms designed and led by Anthony M. Colón: streaming, ETL, lakehouse and analytics systems on AWS and Azure.">
+<meta property="og:title" content="Anthony M. Colón · Data Platform Architecture">
+<meta property="og:description" content="Streaming, ETL, lakehouse and analytics platforms, from collection to reporting.">
+<meta property="og:image" content="diagrams/telematics-data-platform-overview.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Anthony M. Colón</a>
+    <ul>
+      <li><a href="#telematics">Telematics platform</a></li>
+      <li><a href="#network">Network platform</a></li>
+      <li><a href="#jobtracker">Job Search Auto-Pilot</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">Data Platform Architecture Portfolio</p>
+    <h1>Data platforms I have designed and led, from collection to reporting.</h1>
+    <p class="lead">I'm an engineering leader with 17+ years building streaming, ETL, lakehouse and analytics platforms. Each diagram below follows data through four stages: collection and publish, ETL, storage, and reporting. Highlight views trace one path at a time.</p>
+    <ul class="chips">
+      <li>Apache Kafka</li><li>Apache Flink</li><li>Apache Iceberg</li><li>ClickHouse</li>
+      <li>Amazon Redshift</li><li>Snowflake</li><li>Amazon Bedrock</li><li>Azure</li><li>Python · Go · Java</li>
+    </ul>
+    <div class="stats">
+      <div class="stat"><b>17+ yrs</b><span>building and leading data platform teams</span></div>
+      <div class="stat"><b>$55M</b><span>five-year savings from cloud migration</span></div>
+      <div class="stat"><b>40%+</b><span>annual processing and storage savings with Iceberg</span></div>
+      <div class="stat"><b>ms</b><span>API response times after moving serving to ClickHouse</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ TELEMATICS ============ -->
+<section class="project" id="telematics">
+  <div class="wrap">
+    <div class="project-head">
+      <div>
+        <span class="tag">AWS · Streaming · Lakehouse · AI analytics</span>
+        <h2>Telematics Data Platform</h2>
+        <p class="context">Sr. Manager, Software Engineering, Data Platforms · fleet telematics</p>
+        <p>Telematics devices, one per fleet vehicle, emit JSON events. A C++ collector publishes them to Apache Kafka on Amazon MSK. From there, each data set is consumed by whichever of three paths fits its latency and cost needs, and lands in a store chosen for how it will be read.</p>
+        <p>Engineers query with Athena, analysts connect over JDBC, and the customer application reads through a GraphQL API. Customers can also ask questions in plain language: Amazon Bedrock turns the question into a query against the Cube semantic layer, which runs it through the same GraphQL API.</p>
+      </div>
+      <aside class="facts">
+        <h3>What I led</h3>
+        <ul>
+          <li>Migrated data from Redshift to Amazon S3 Tables on Apache Iceberg</li>
+          <li>Designed and integrated ClickHouse, then moved the app serving layer to it for millisecond responses</li>
+          <li>Integrated the natural-language analytics agent: Bedrock prompts, Cube semantic layer, data-object tuning</li>
+          <li>Built a framework so teams onboard new pipelines to Redshift, Iceberg and ClickHouse</li>
+        </ul>
+        <h3>Design choices</h3>
+        <ul>
+          <li>One bus, three consumption paths, matched to each data set</li>
+          <li>Iceberg as the low-cost system of record, exposed as Redshift external tables and ClickHouse materialized views</li>
+        </ul>
+      </aside>
+    </div>
+
+    <figure class="hero-fig">
+      <a href="diagrams/telematics-data-platform-overview.png" target="_blank" rel="noopener"><img src="diagrams/telematics-data-platform-overview.png" alt="Telematics data platform overview: devices to Kafka on MSK, three ETL paths into Redshift, Iceberg and ClickHouse, read by Athena, JDBC tools, GraphQL, and a natural-language query path through Bedrock and Cube." loading="lazy"></a>
+      <figcaption><b>End-to-end flow.</b> Collection and publish, ETL, storage, and reporting. Click to open full size.</figcaption>
+    </figure>
+
+    <div class="views">
+      <a class="view" href="diagrams/telematics-data-platform-flink.png" target="_blank" rel="noopener">
+        <img src="diagrams/telematics-data-platform-flink.png" alt="Apache Flink path highlighted" loading="lazy">
+        <div class="body"><h4><i style="background:var(--teal)"></i>Apache Flink path</h4>
+        <p>Managed Flink applies business rules and quality checks, lands Parquet on S3, and Redshift COPY bulk-loads it.</p></div>
+      </a>
+      <a class="view" href="diagrams/telematics-data-platform-msk.png" target="_blank" rel="noopener">
+        <img src="diagrams/telematics-data-platform-msk.png" alt="MSK streaming path highlighted" loading="lazy">
+        <div class="body"><h4><i style="background:var(--amber)"></i>MSK streaming path</h4>
+        <p>Redshift reads the MSK topic directly into streaming materialized views for low-latency data.</p></div>
+      </a>
+      <a class="view" href="diagrams/telematics-data-platform-python.png" target="_blank" rel="noopener">
+        <img src="diagrams/telematics-data-platform-python.png" alt="Python and S3 Tables path highlighted" loading="lazy">
+        <div class="body"><h4><i style="background:var(--violet)"></i>Python / S3 Tables path</h4>
+        <p>An in-house Python consumer writes Parquet to S3 Tables. Iceberg, via Glue, feeds Redshift and ClickHouse.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NETWORK ============ -->
+<section class="project" id="network">
+  <div class="wrap">
+    <div class="project-head">
+      <div>
+        <span class="tag">Azure · Confluent Kafka · Snowflake · Iceberg</span>
+        <h2>Network Data Platform</h2>
+        <p class="context">Associate Technical Director · telecom network service assurance</p>
+        <p>Network devices report in three formats, and each format has its own collection and ETL path. CSV and JSON are published to Confluent Kafka by Logstash, Telegraf and custom Python collectors. Bulk XML files are pulled over SFTP and pushed over HTTPS to an Azure Blob landing zone.</p>
+        <p>ETL is a mix of Logstash, GoLang and Java parsers, Telegraf and Snowpipe Streaming. Each data set loads into the store that fits it: Elasticsearch for platform health, InfluxDB for time series, Snowflake for aggregation and analytics, and Apache Iceberg as a lower-cost lakehouse. Grafana, Kibana, Power BI, Palantir, Databricks and analyst JDBC tools read from those stores.</p>
+      </div>
+      <aside class="facts">
+        <h3>What I led</h3>
+        <ul>
+          <li>Introduced Apache Iceberg, cutting annual processing and storage cost by more than 40%</li>
+          <li>Integrated Confluent Kafka, Snowflake, Elasticsearch, InfluxDB and Grafana into an event-driven platform</li>
+          <li>Built the observability and monitoring used to catch service degradation early</li>
+        </ul>
+        <h3>Design choices</h3>
+        <ul>
+          <li>Kafka for streaming formats, Blob storage with event triggers for bulk files</li>
+          <li>Iceberg exposed to Snowflake as external tables, so one copy serves both</li>
+          <li>Bulk Parquet and staged files for large loads, Snowpipe Streaming only for a small, latency-sensitive set</li>
+        </ul>
+      </aside>
+    </div>
+
+    <figure class="hero-fig">
+      <a href="diagrams/network-data-platform-overview.png" target="_blank" rel="noopener"><img src="diagrams/network-data-platform-overview.png" alt="Network data platform overview: CSV, JSON and XML device data through Kafka and Azure Blob, ETL in Logstash, Go, Java, Telegraf and Snowpipe, into Elasticsearch, InfluxDB, Snowflake and Iceberg, read by Grafana, Kibana, Power BI, Palantir, Databricks and JDBC tools." loading="lazy"></a>
+      <figcaption><b>End-to-end flow.</b> Three source formats, four fit-for-purpose stores. Click to open full size.</figcaption>
+    </figure>
+
+    <div class="views">
+      <a class="view" href="diagrams/network-data-platform-csv.png" target="_blank" rel="noopener">
+        <img src="diagrams/network-data-platform-csv.png" alt="CSV path highlighted" loading="lazy">
+        <div class="body"><h4><i style="background:var(--teal)"></i>CSV path</h4>
+        <p>Logstash publishes to Kafka. Logstash consumers index Elasticsearch, and a GoLang parser builds bulk files in Blob for Snowflake.</p></div>
+      </a>
+      <a class="view" href="diagrams/network-data-platform-json.png" target="_blank" rel="noopener">
+        <img src="diagrams/network-data-platform-json.png" alt="JSON path highlighted" loading="lazy">
+        <div class="body"><h4><i style="background:var(--amber)"></i>JSON path</h4>
+        <p>Telegraf loads InfluxDB, Snowpipe Streaming loads a small set directly, and a GoLang parser writes bulk Parquet to Iceberg and Snowflake.</p></div>
+      </a>
+      <a class="view" href="diagrams/network-data-platform-xml.png" target="_blank" rel="noopener">
+        <img src="diagrams/network-data-platform-xml.png" alt="XML path highlighted" loading="lazy">
+        <div class="body"><h4><i style="background:var(--violet)"></i>XML path</h4>
+        <p>Blob events trigger Java parsers that emit load-ready CSV for Snowflake, with a Parquet branch to Iceberg.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOBTRACKER ============ -->
+<section class="project" id="jobtracker">
+  <div class="wrap">
+    <div class="project-head">
+      <div>
+        <span class="tag">Personal project · Agentic AI · Human in the loop</span>
+        <h2>Job Search Auto-Pilot</h2>
+        <p class="context">Personal project · Claude agents, Python tooling, PostgreSQL</p>
+        <p>An agentic workflow I built to run my own job search. Claude searches job boards, filters postings against my location, pay and seniority gates, and scores each one for fit. It then tailors a resume from a bank of verified accomplishments, and a local builder lints it and produces ATS-safe Word and PDF files.</p>
+        <p>I approve every draft. Claude fills in the application form but never submits it: I do. Afterwards it reads recruiter replies from Gmail and updates the matching row in PostgreSQL, the single system of record behind a small tracker app and a daily status chart.</p>
+      </div>
+      <aside class="facts">
+        <h3>Design choices</h3>
+        <ul>
+          <li>A person approves and submits at every step that has consequences</li>
+          <li>Resumes are built only from a verified fact bank, then linted against a banned-phrase list</li>
+          <li>One PostgreSQL table holds every application and its status</li>
+          <li>Personal inputs stay local and out of the repository</li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="views two">
+      <a class="view" href="diagrams/jobtracker-flow.png" target="_blank" rel="noopener">
+        <img src="diagrams/jobtracker-flow.png" alt="Job Search Auto-Pilot end-to-end flow: find, tailor and review, apply, follow up, with PostgreSQL as system of record" loading="lazy">
+        <div class="body"><h4>End-to-end flow</h4>
+        <p>Find, tailor and review, apply, follow up. Each step writes its status to PostgreSQL.</p></div>
+      </a>
+      <a class="view" href="diagrams/jobtracker-lifecycle.png" target="_blank" rel="noopener">
+        <img src="diagrams/jobtracker-lifecycle.png" alt="Application lifecycle: Not started, Ready to submit, Applied, Screening, Interview, Offer, Rejected, Withdrawn" loading="lazy">
+        <div class="body"><h4>Application lifecycle</h4>
+        <p>How each application moves from lead to offer, rejection or withdrawal, and which step sets each status.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>I lead data platform engineering across streaming, batch ETL, open table formats and analytics, with a focus on reliability, cost and speed. I've led teams of 10 to 15 engineers and tech leads across US and offshore locations, and I'm based in Southern California.</p>
+    <p>Diagrams show architecture patterns only. They contain no customer data, internal hostnames, volumes or credentials.</p>
+    <p><a href="https://github.com/acolon3">GitHub</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Anthony M. Colón · Diagrams generated from code and rendered as SVG and PNG.</div>
+</footer>
+
+</body>
+</html>
